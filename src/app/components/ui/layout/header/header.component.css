@@ -1,0 +1,48 @@
+.nav {
+  background: white;
+  padding: 5rem;
+}
+.icon{
+  margin: 10px;
+  overflow: visible;
+  font-size: 30px;
+}
+
+ ul{
+
+ display: flex;
+ -ms-flex-align: center;
+   justify-content: space-between;}
+
+ li{
+   list-style: none;
+ }
+ .mat-icon:hover{
+   color: orange;
+ }
+ a{
+   position: relative;
+ }
+ .active{
+   color: orange;
+ }
+.active::after{
+  width: 100%;
+  background: orange;
+}
+
+a::after{
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #724848;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+a:hover::after{
+  width: 100%;
+  left: 0;
+}
