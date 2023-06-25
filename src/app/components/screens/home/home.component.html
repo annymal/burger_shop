@@ -1,7 +1,7 @@
-<div>
-  <ul>
-  <li *ngFor="let food of foods">
-  {{food}}
-  </li>
-  </ul>
-</div>
+<main>
+  <app-search (findFoods)="onSearch($event)"></app-search>
+  <div class="catalog">
+    <app-food-item *ngFor ="let food of filteredFoods"
+                   [food]="food"></app-food-item>
+  </div>
+</main>

@@ -1,0 +1,9 @@
+.search{
+  margin-bottom: 4px;
+}
+input{
+  padding: 4px;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}

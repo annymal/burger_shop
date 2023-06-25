@@ -9,13 +9,16 @@
 }
 
  ul{
-
+   width: 100%;
  display: flex;
  -ms-flex-align: center;
-   justify-content: space-between;}
-
+   justify-content: space-between;
+ }
  li{
    list-style: none;
+ }
+ .mat-icon{
+   color: #560c62;
  }
  .mat-icon:hover{
    color: orange;
@@ -39,7 +42,7 @@ a::after{
   display: block;
   height: 4px;
   width: 0;
-  background: #724848;
+  background: #560c62;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 a:hover::after{

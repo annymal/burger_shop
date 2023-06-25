@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FoodItemComponent } from './food-item/food-item.component';
 import { SearchComponent } from './search/search.component';
 import {FoodService} from "../../../services/food.service";
+import {RouterLinkWithHref} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -12,7 +14,13 @@ import {FoodService} from "../../../services/food.service";
     SearchComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLinkWithHref,
+    FormsModule
+  ],
+  exports: [
+    FoodItemComponent,
+    SearchComponent
   ],
   providers: [FoodService]
 })

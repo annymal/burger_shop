@@ -1,4 +1,6 @@
 .layout{
   -ms-overflow-x: hidden;
+  max-width: 550px;
+  margin: 0 auto;
 }
 

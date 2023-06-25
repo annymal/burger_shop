@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IFood} from "../../../../services/food/food.interface";
 
 @Component({
   selector: 'app-food-item',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./food-item.component.css']
 })
 export class FoodItemComponent {
+  @Input() food: IFood;
 
 }

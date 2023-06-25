@@ -12,13 +12,19 @@ export class HomeComponent implements OnInit{
 
 
   foods: IFood[] = []
+  filteredFoods: IFood[]=[];
 
   constructor(private foodService: FoodService) {}
 
   ngOnInit() :void{
     this.foodService.getAll().subscribe(data => {
       this.foods = data;
+      this.filteredFoods = data;
     })
+  }
+  onSearch(eventData: {searchTerm: string}){
+    this.filteredFoods = this.foods.filter(food =>
+    food.title.toLowerCase().includes(eventData.searchTerm.toLowerCase()))
   }
 
 }

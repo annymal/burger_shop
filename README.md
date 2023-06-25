@@ -26,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 проблемы: не получалось настроить package.json, необходимо было скопировать с предыдущего проекта, чтобы сработал npm i и появились node modules/
+проблемы: несоответствие версий angular/cdk и версии angular, была ошибка : CSP nonse. Решение: удалить node modules и package lock, устаносить вручную npm i angular/cdk@14.2.7, далее установить оставшиеся пакеты npm i, и сделать сборку ng serve
+при создании приложения не создался полифил, решение: скопировала с другого проекта (??)
+знакомилась со свойством Output: 

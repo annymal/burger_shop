@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "../../../../untitled1/my-app/src/app/components/screens/home/home.component";
-import {SalesComponent} from "../../../../untitled1/my-app/src/app/components/screens/sales/sales.component";
-import {FavoritesComponent} from "../../../../untitled1/my-app/src/app/components/screens/favorites/favorites.component";
-import {ProfileComponent} from "../../../../untitled1/my-app/src/app/components/screens/profile/profile.component";
+import {HomeComponent} from "./components/screens/home/home.component";
+import {SalesComponent} from "./components/screens/sales/sales.component";
+import {FavoritesComponent} from "./components/screens/favorites/favorites.component";
+import {ProfileComponent} from "./components/screens/profile/profile.component";
+
 
 const routes: Routes = [{
   path: '',
