@@ -26,5 +26,8 @@ export class HomeComponent implements OnInit{
     this.filteredFoods = this.foods.filter(food =>
     food.title.toLowerCase().includes(eventData.searchTerm.toLowerCase()))
   }
+  onFilter(eventData: {type: string}){
+    this.filteredFoods = this.foods.filter(food => food.type === eventData.type)
+  }
 
 }

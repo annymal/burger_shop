@@ -1,11 +1,15 @@
 
-<a [routerLink]="'/food/'+ food.id" class="item">
-  <img [src]="food.image" alt="">
-  <span class="heading">
+<a [routerLink]="'/food/'+ food.id" class="item" style="text-decoration: none">
+  <img [src]="food.image" alt="" style="margin-bottom: 1rem">
+  <h2 class="heading">
     {{food.title}}
-  </span>
+  </h2>
   <span class="price">
-    {{food.price |currency: 'RUB'}}
+    {{food.price |currency: 'RUB '}}
   </span>
+  <mat-card-actions>
+    <button mat-button class="btn-success btn" (click)="addToBasket(food)" type="button">В корзину</button>
+    <button mat-button class="btn-success btn">Добавить в избранное</button>
+  </mat-card-actions>
 </a>
 

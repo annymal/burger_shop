@@ -1,0 +1,15 @@
+.btn{
+  background: #560c62;
+  margin: 1rem 0;
+  border: none;
+}
+
+input{
+  border-radius: 5px;
+  padding:5px;
+}
+button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

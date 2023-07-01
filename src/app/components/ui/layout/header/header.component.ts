@@ -13,8 +13,8 @@ export class HeaderComponent implements OnInit{
     icon: 'home'
   },
     {
-      path: '/sale',
-      icon: 'percent'
+      path: '/basket',
+      icon: 'shopping_cart'
     },
     {
       path: '/favorites',

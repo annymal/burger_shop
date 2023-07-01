@@ -1,6 +1,7 @@
 .nav {
-  background: white;
-  padding: 5rem;
+  padding: 3rem;
+  background: rgb(164, 131, 131);
+  margin-bottom: 2rem;
 }
 .icon{
   margin: 10px;

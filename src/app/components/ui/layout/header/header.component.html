@@ -1,5 +1,8 @@
 <nav class="nav">
   <ul>
+    <div class="logo">
+      <img src="https://am-burger.ru/wp-content/uploads/2020/08/logo_amburger.png" alt="" style="height: 50px">
+    </div>
     <li *ngFor="let item of menuItems">
       <a [routerLink]="item.path"
          routerLinkActive="active">

@@ -1,1 +1,18 @@
-<p>profile works!</p>
+<div class="d-flex flex-column col-6 m-auto authorization">
+    <h1>Войти</h1>
+    <input type="text"
+           class="mt-2"
+           pInputText
+           placeholder="Введите логин"
+           [ngClass]="{'input-error': !login}"
+           [ngModel]="login"/>
+    <input type="text"
+           class="mt-2"
+           pInputText
+           placeholder="Введите пароль"
+           [ngClass]="{'input-error': !psw}"
+           [(ngModel)]="psw"/>
+    <button class="btn btn-success enter" type="submit">Войти</button>
+    <p>Еще не зарегистрированы?</p>
+   <button class="btn btn-success" type="submit" [routerLink]="['registration']">Зарегистрироваться</button>
+  </div>

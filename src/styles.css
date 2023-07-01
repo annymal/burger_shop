@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; font-size: medium;
+html, body {
+  height: 100%;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #a89f9f;
+}
 img{
-  height:200px;
+  height:240px;
   max-width:100%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
 }
 
 

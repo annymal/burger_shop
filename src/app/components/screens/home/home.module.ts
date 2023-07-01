@@ -5,23 +5,30 @@ import { SearchComponent } from './search/search.component';
 import {FoodService} from "../../../services/food.service";
 import {RouterLinkWithHref} from "@angular/router";
 import {FormsModule} from "@angular/forms";
+import { FiltersComponent } from './filters/filters.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatCardModule} from "@angular/material/card";
 
 
 
 @NgModule({
   declarations: [
     FoodItemComponent,
-    SearchComponent
+    SearchComponent,
+    FiltersComponent
   ],
   imports: [
     CommonModule,
     RouterLinkWithHref,
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatCardModule
   ],
-  exports: [
-    FoodItemComponent,
-    SearchComponent
-  ],
+    exports: [
+        FoodItemComponent,
+        SearchComponent,
+        FiltersComponent
+    ],
   providers: [FoodService]
 })
 export class HomeModule { }

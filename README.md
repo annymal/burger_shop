@@ -28,4 +28,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 проблемы: не получалось настроить package.json, необходимо было скопировать с предыдущего проекта, чтобы сработал npm i и появились node modules/
 проблемы: несоответствие версий angular/cdk и версии angular, была ошибка : CSP nonse. Решение: удалить node modules и package lock, устаносить вручную npm i angular/cdk@14.2.7, далее установить оставшиеся пакеты npm i, и сделать сборку ng serve
 при создании приложения не создался полифил, решение: скопировала с другого проекта (??)
-знакомилась со свойством Output: 
+
+
+ПОзнакомилась со свойством Output:
+Когда пользователь нажимает кнопку, он фактически вызывает событие, которое будет отправлено обратно родительскому элементу.
+Output:
+1.Нужно пометить свойство в дочернем компоненте декоратором Output и назначить объект EventEmitter
+@Output()
+movieSelectedEventEmitter = new EventEmitter();
+
+2.В родителя нужно добавить событие и присвоить методу
+(movieSelectedEventEmitter)="selectedMovieToWatch($event)"
+
+Авторизация:
