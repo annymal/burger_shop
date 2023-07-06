@@ -1,1 +1,37 @@
-<p>sales works!</p>
+<ng-container class="h-100" >
+  <div class = "container">
+    <div class="card-table">
+      <h1>Корзина</h1>
+      <div class = "cart-product">
+        <table class="table table-responsive" style="--bs-table-bg:none">
+          <thead>
+          <tr>
+            <th>Номер</th>
+            <th>Наименование</th>
+            <th>Изображение</th>
+            <th>Количество</th>
+            <th>Цена</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor = "let food of basketItems; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{food.title}}</td>
+            <td><img style = "" src="/assets/img/{{food.image}}" alt=""></td>
+            <td>
+<!--              <button class="minus" (click)="minusItemFromBasket(item)">-</button>-->
+<!--              <input type="text" class="quantity" [value]="quantity"/>-->
+<!--              <button class="plus" (click)="plusItemToBasket(item)">+</button>-->
+<!--              </td>-->
+<!--            <td>{{food.price*quantity}} руб.</td>-->
+            <td>
+<!--              <button (click)="removeItem(item)" class = "btn btn-danger">Удалить</button>-->
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <button (click)="removeAll()" class = "btn btn-danger">Удалить все</button>
+      </div>
+    </div>
+  </div>
+</ng-container>

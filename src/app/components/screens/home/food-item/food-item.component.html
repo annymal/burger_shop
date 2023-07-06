@@ -1,6 +1,6 @@
 
 <a [routerLink]="'/food/'+ food.id" class="item" style="text-decoration: none">
-  <img [src]="food.image" alt="" style="margin-bottom: 1rem">
+    <img src="/assets/img/{{food.image}}" alt="" style="margin-bottom: 1rem">
   <h2 class="heading">
     {{food.title}}
   </h2>
@@ -9,7 +9,6 @@
   </span>
   <mat-card-actions>
     <button mat-button class="btn-success btn" (click)="addToBasket(food)" type="button">В корзину</button>
-    <button mat-button class="btn-success btn">Добавить в избранное</button>
+    <button mat-button class="btn-success btn" (click)="addToFavorites(food)">Добавить в избранное</button>
   </mat-card-actions>
 </a>
-

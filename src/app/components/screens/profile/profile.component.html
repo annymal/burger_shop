@@ -1,4 +1,4 @@
-<div class="d-flex flex-column col-6 m-auto authorization">
+<div class="d-flex flex-column col-4 m-auto authorization">
     <h1>Войти</h1>
     <input type="text"
            class="mt-2"
@@ -12,7 +12,7 @@
            placeholder="Введите пароль"
            [ngClass]="{'input-error': !psw}"
            [(ngModel)]="psw"/>
-    <button class="btn btn-success enter" type="submit">Войти</button>
+    <button class="btn btn-success" type="submit">Войти</button>
     <p>Еще не зарегистрированы?</p>
    <button class="btn btn-success" type="submit" [routerLink]="['registration']">Зарегистрироваться</button>
   </div>

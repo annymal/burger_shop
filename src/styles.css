@@ -8,12 +8,18 @@ body { margin: 0;
   background: #a89f9f;
 }
 img{
-  height:240px;
+  height:290px;
   max-width:100%;
 }
+/*.footer {*/
+/*  position: fixed;*/
+/*  bottom: 0;}*/
 .footer {
-  position: fixed;
-  bottom: 0;
+  display:block;
+  width: 100%;
+}
+h1{
+  text-align: center;
 }
 
 

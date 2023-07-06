@@ -1,3 +1,12 @@
-<p>В избранном пусто</p>
-<p>У вас еще нет никаких продуктов в списке избранного. Вернитесь пожалуйста в меню и добавьте продукты.</p>
+<div class="container">
+<h1>Избранное</h1>
+<div class="d-grid fav">
+<div *ngFor = "let food of favoritesItems; let i = index" class="item">
+            <h2 class="heading">{{food.title}}</h2>
+            <img src="/assets/img/{{food.image}}" alt="">
+            <span class="price">{{food.price |currency: 'RUB '}}</span>
+              <!--              <button (click)="removeItem(item)" class = "btn btn-danger">Удалить</button>-->
+            </div>
+</div>
+</div>
 
