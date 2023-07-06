@@ -22,17 +22,17 @@ export class BasketService {
     const basketArray = JSON.parse(itemsFromStorage)
     return this.basketItems?.length === 0 ? basketArray : this.basketItems;
   }
-  // removeCartItem(foodId:string) {
-  //   this.basketItems = this.basketItems.filter(item => item.food.id !== foodId);
-  //   // localStorage.setItem('basket', JSON.stringify(this.basketItems))//запись в localstorage в виде строки
-  //   this.BasketList.next(this.basketItems)
-  //
-  // }
+  removeCartItem(foodId:string) {
+    this.basketItems = this.basketItems.filter(item => item.food.id !== foodId);
+    this.BasketList.next(this.basketItems)
+    console.log(this.basketItems)
+    localStorage.setItem('basket', JSON.stringify(this.basketItems))//запись в localstorage в виде строки
+
+  }
 
   removeAllCart(){
     this.basketItems = [];
     this.BasketList.next(this.basketItems)
-    console.log(this.basketItems);
     localStorage.setItem('basket', JSON.stringify(this.basketItems))
 
   }

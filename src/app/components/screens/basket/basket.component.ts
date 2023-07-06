@@ -36,10 +36,12 @@ export class BasketComponent implements OnInit {
   //     this.i++;
   //     this.quantity = this.i;
   // }
-  // item: any;
-  // removeItem(item: any) {
-  //   this.basketService.removeCartItem(item);
-  // }
+  item: any;
+
+  removeItem(item: any) {
+    this.basketService.removeCartItem(item);
+    this.basketItems = this.basketService.getBasketItems()
+  }
   removeAll(){
     this.basketService.removeAllCart();
     this.basketItems = this.basketService.getBasketItems()
