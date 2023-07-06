@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Beef Burger",
+    "price": 5.4,
+    "type": "burger",
+    "image": "beefburg.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Burger",
+    "price": 5.4,
+    "type": "burger",
+    "image": "chickenburg.jpg"
+  },
+  {
+    "id": 3,
+    "title": "BigMac Burger",
+    "price": 5.4,
+    "type": "burger",
+    "image": "bigmac.jpg"
+  },
+  {
+    "id": 4,
+    "title": "CheeseBurger",
+    "price": 5.4,
+    "type": "burger",
+    "image": "cheeseburg.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Chicken",
+    "price": 5.4,
+    "type": "chicken",
+    "image": "chicken.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Coca Cola",
+    "price": 5.4,
+    "type": "drink",
+    "image": "cola.jpg"
+  }
+
+
+]

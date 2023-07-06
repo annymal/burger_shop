@@ -1,0 +1,39 @@
+<div class="d-flex flex-column col-4 m-auto ">
+    <h1>Регистрация</h1>
+  <div>
+    <input type="text"
+           class="mt-2"
+           placeholder="Логин"
+           pInputText
+           [ngClass]="{'input-error': !login}"
+           [(ngModel)]="login"/>
+  </div>
+  <div>
+    <input type="text"
+           class="mt-2"
+           placeholder="Пароль"
+           pInputText
+           [ngClass]="{'input-error': !psw}"
+           [(ngModel)]="psw"/>
+  </div>
+  <div>
+    <input type="text"
+           class="mt-2"
+           placeholder="Повторите пароль"
+           pInputText
+           [ngClass]="{'input-error': !pswRepeat}"
+           [(ngModel)]="pswRepeat"/>
+  </div>
+  <div>
+    <input type="text"
+           placeholder="Email"
+           class="mt-2"
+           pInputText
+           [(ngModel)]="email"/>
+  </div>
+  <div>
+    <button (click)="registration($event)" type="button" class="btn btn-success">Зарегистрироваться</button>
+  </div>
+</div>
+<p-toast position="bottom-center"></p-toast>
+
