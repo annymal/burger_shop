@@ -3,6 +3,7 @@
     <div class="card-table">
       <h1>Корзина</h1>
       <div class = "cart-product">
+        <button (click)="removeAll()" class = "btn btn-danger">Очистить корзину</button>
         <table class="table table-responsive" style="--bs-table-bg:none">
           <thead>
           <tr>
@@ -30,7 +31,6 @@
           </tr>
           </tbody>
         </table>
-        <button (click)="removeAll()" class = "btn btn-danger">Удалить все</button>
       </div>
     </div>
   </div>

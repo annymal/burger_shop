@@ -10,7 +10,6 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
 
 
-
 @NgModule({
   declarations: [
     FoodItemComponent,
@@ -24,11 +23,11 @@ import {MatCardModule} from "@angular/material/card";
     MatButtonModule,
     MatCardModule
   ],
-    exports: [
-        FoodItemComponent,
-        SearchComponent,
-        FiltersComponent
-    ],
+  exports: [
+    FoodItemComponent,
+    SearchComponent,
+    FiltersComponent,
+  ],
   providers: [FoodService]
 })
 export class HomeModule { }

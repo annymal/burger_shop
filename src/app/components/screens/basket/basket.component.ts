@@ -16,7 +16,6 @@ export class BasketComponent implements OnInit {
 
   ngOnInit() {
     this.basketItems = this.basketService.getBasketItems()
-    // console.log('this.basketItems', this.basketItems)
   };
 
   // quantity:number=1;
@@ -43,6 +42,7 @@ export class BasketComponent implements OnInit {
   // }
   removeAll(){
     this.basketService.removeAllCart();
+    this.basketItems = this.basketService.getBasketItems()
     console.log('this.basketItems delete', this.basketItems)
   }
 }

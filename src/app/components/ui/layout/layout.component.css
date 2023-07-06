@@ -1,5 +1,8 @@
 .layout{
   -ms-overflow-x: hidden;
-  margin: 0 auto;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 10rem;
 }
 

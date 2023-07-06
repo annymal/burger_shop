@@ -33,6 +33,7 @@ export class BasketService {
     this.basketItems = [];
     this.BasketList.next(this.basketItems)
     console.log(this.basketItems);
+    localStorage.setItem('basket', JSON.stringify(this.basketItems))
 
   }
 
